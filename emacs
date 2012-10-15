@@ -2,23 +2,20 @@
 ;;
 
 ;; TODO: CC-MODE
-
 ;; Emacs 23 change font size: C-x C-+, C-x C--
 ;;
 
-;; modes
-
 (require 'twittering-mode)
 
-;; visual options
-
+;;
+;; visual
+;;
 (set-background-color "gray13")
 (set-foreground-color "white")
-
 ;;M-x customize-face RET scroll-bar RET
 
 ; start emacs fullscreen
-; DOESNT WORK - USE -MM emacs switch
+; doesn't work -- use "-mm" switch
 (add-to-list 'initial-frame-alist `(fullscreen . fullheight))
 (add-to-list 'default-frame-alist `(fullscreen . fullheight))
 
@@ -31,11 +28,11 @@
 ;; tab width
 (setq default-tab-width 4)
 
-;; cc-mode - Java, and C*
+;; cc-mode
 (setq c-basic-offset 4)
 
-(line-number-mode 1)    ; makes the line number show up
-(column-number-mode 1)  ; makes the column number show up
+(line-number-mode 1)
+(column-number-mode 1)
 
 ;; set UTF8 default coding
 (setq locale-coding-system 'utf-8)
@@ -44,12 +41,12 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-(setq visible-bell t) ; no beeping
+(setq visible-bell t)
 
-;;;;;;; FONTS
+;; visual
 
 ;;***** (set-default-font "Inconsolata 11")
-(set-default-font "Consolas 10")  ;; *****
+(set-default-font "Consolas 10")
 ;;(set-default-font "Source Sans Pro 11")
 ;;***   (set-default-font "Fixedsys Excelsior 3.01 12")
 ;;(set-default-font "Roboto Medium 11")
@@ -66,7 +63,6 @@
 ;; (set-default-font "Andale Mono 10")
 ;;***** (set-default-font "Anonymous Pro 11") 
 ;; (set-default-font "Courier New 10")
-
 
 ;;(tool-bar-mode)
 (set-scroll-bar-mode "right")
