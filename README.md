@@ -1,1 +1,1 @@
-Useful dotfiles.
+Useful dotfiles and scripts, Linux mostly.
