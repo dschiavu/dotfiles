@@ -10,8 +10,23 @@
 ;;
 ;; visual
 ;;
-(set-background-color "gray13")
-(set-foreground-color "white")
+(set-background-color "gray15") ;; was gray15
+(set-foreground-color "white") ;; for X11 emacs, birghtgreen is also cool
+;;(set-foreground-color "lightwhite") ;; for console
+
+;;
+;; postavke boja za konzolu:
+;; 
+;; u direktorij:
+;; /usr/loca/share/emacs/site-lisp
+;; staviti file naziva tip-terminala.el
+;; i emacs ce ga izvrsiti ovisno u kojem se TERM-u nalazimo!
+;; korisno za podesavanje boja kad je emacs u konzoli a ne GUI!
+;;
+;; !!! vidi opis kako radi u /usr/share/emacs/verzija/lisp/term/README !!!!!
+
+;(set-background-color "white")
+;(set-foreground-color "black")
 ;;M-x customize-face RET scroll-bar RET
 
 ; start emacs fullscreen
@@ -27,6 +42,8 @@
 
 ;; tab width
 (setq default-tab-width 4)
+
+(setq fill-width 120)
 
 ;; cc-mode
 (setq c-basic-offset 4)
@@ -47,6 +64,7 @@
 
 ;;***** (set-default-font "Inconsolata 11")
 (set-default-font "Consolas 10")
+;;(set-default-font "Ubuntu Mono 12")
 ;;(set-default-font "Source Sans Pro 11")
 ;;***   (set-default-font "Fixedsys Excelsior 3.01 12")
 ;;(set-default-font "Roboto Medium 11")
@@ -104,6 +122,9 @@
 (toggle-full-screen-and-bars)
 
 ;; full screen END
+
+;; Associate buffer names with modes
+(add-to-list 'auto-mode-alist '("\\.json\\'" . js-mode))
 
 (add-hook 'python-mode-hook
           (lambda ()
