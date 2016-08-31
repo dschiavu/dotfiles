@@ -16,7 +16,7 @@
 ;;
 ;; visual
 ;;
-(set-background-color "gray15") ;; was gray15
+(set-background-color "gray19") ;; was gray15
 (set-foreground-color "white") ;; for X11 emacs, birghtgreen is also cool
 ;;(set-foreground-color "lightwhite") ;; for console
 
@@ -69,7 +69,13 @@
 ;; visual
 
 ;;***** (set-default-font "Inconsolata 11")
-(set-default-font "Consolas 10")
+;;(set-default-font "Consolas 10")
+
+;; Mac:
+(set-default-font "Menlo 15")
+;;(set-default-font "Monaco 15")
+;;(set-default-font "Menlo 15")
+
 ;;(set-default-font "Consolas Bold 10")
 ;;(set-default-font "Ubuntu Mono 12")
 ;;(set-default-font "Ubuntu Mono Bold 12")
