@@ -13,6 +13,9 @@
 
 ;;(require 'twittering-mode)
 
+;; Add melpa package source when using package list
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+
 ;; M-x icomplete-modeIn the M-x prompt (and elsewhere), show completions as you type
 ;; M-x iswitchb-modeShow all buffer names when you switch buffers with C-x b
 
@@ -23,8 +26,13 @@
 (set-foreground-color "white") ;; for X11 emacs, birghtgreen is also cool
 ;;(set-foreground-color "lightwhite") ;; for console
 
-;;(load-theme 'misterioso) ;; tsdh-dark, solarized
-(load-theme 'misterioso)
+;;(load-theme 'misterioso) ;; tsdh-dark, solarized: https://github.com/sellout/emacs-color-theme-solarized
+;; zenburn: http://wikemacs.org/wiki/Zenburn-theme
+;; package-install zenburn-theme   M-x list-packages
+;;(load-theme 'misterioso)
+(load-theme 'zenburn t)
+;;(load-theme 'solarized-dark t)
+;;(load-theme 'solarized)
 ;; adwaita 	deeper-blue 	dichromacy 	leuven 	light-blue 	manoj-dark
 ;; misterioso 	tango 	tango-dark 	tsdh-dark 	tsdh-light 	wheatgrass
 ;; whiteboard 	wombat
@@ -160,19 +168,22 @@
             (setq indent-tabs-mode t)
             (setq tab-width 4)))
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(custom-safe-themes
+   (quote
+	("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "0e219d63550634bc5b0c214aced55eb9528640377daf486e13fb18a32bf39856" default)))
  '(show-paren-mode t)
  '(text-scale-mode-step 1.2)
  '(tool-bar-mode nil))
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(scroll-bar ((t (:background "gray13" :inverse-video t :width normal)))))
 
 ;;
